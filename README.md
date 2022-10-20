@@ -239,6 +239,18 @@ creating ./my_package/test/test_pep257.py
 creating ./my_package/my_package/my_node.py
 ```
 
+**6.2. Building the Package **
+
+To build the package we just created, we run `colcon build` command in the terminal.
+
+**6.3. Source the setup file**
+
+To use the new package, in the new terminal, we need to source the setup file using following command:
+
+```
+. install/setup.bash
+```
+
 
 
 ## Week 5
