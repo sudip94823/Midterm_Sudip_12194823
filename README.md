@@ -189,6 +189,57 @@ It is a important before we can run executables built by colcon.
 
 ### 6. Creating a Package
 
+**6.1. What is a ROS2 package? **
+
+_It can be considered as a container for ROS2 codes which has their own minimum required contents. Since we are using python here, it should have `package.xml`, `setup.py`, `setup.cfg` and `/<package_name>`.
+
+
+Before running package creation command, it is important to be in the `src` folder. 
+
+```
+cd ~/ros2_ws/src
+```
+
+**Package creation command:**
+
+```
+ros2 pkg create --build-type ament_python --node-name my_node my_package
+```
+
+This will create a package named `my_package`.
+
+We can see the following message from our terminal:
+
+
+```python
+going to create a new package
+package name: my_package
+destination directory: /home/user/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['<name> <email>']
+licenses: ['TODO: License declaration']
+build type: ament_python
+dependencies: []
+node_name: my_node
+creating folder ./my_package
+creating ./my_package/package.xml
+creating source folder
+creating folder ./my_package/my_package
+creating ./my_package/setup.py
+creating ./my_package/setup.cfg
+creating folder ./my_package/resource
+creating ./my_package/resource/my_package
+creating ./my_package/my_package/__init__.py
+creating folder ./my_package/test
+creating ./my_package/test/test_copyright.py
+creating ./my_package/test/test_flake8.py
+creating ./my_package/test/test_pep257.py
+creating ./my_package/my_package/my_node.py
+```
+
+
 
 ## Week 5
 
