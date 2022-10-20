@@ -197,8 +197,6 @@ It is a important before we can run executables built by colcon.
 - Writing a simple service and client using python
 - Creating custom msg and srv files
 - Implementing custom interfaces
-- Using parameters in a class
-- Using ros2doctor to identify issues
 
 ### 1. Writing a simple publisher and subscriber
 
